@@ -75,7 +75,7 @@
          push: true
          tags: ghcr.io/${{ steps.lower.outputs.repo }}/solar-system:${{ github.sha }}        
 
-      dev-deploy:
+    dev-deploy:
         needs: docker
         runs-on: ubuntu-latest
         environment: developement
