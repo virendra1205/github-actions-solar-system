@@ -79,8 +79,7 @@
       name: Dev Deployment 
       needs: docker
       runs-on: ubuntu-latest
-      environment: 
-        group: developement
+      environment: developement
       steps:
         - name: Create k8s Kind Cluster
           uses: helm/kind-action@v1
